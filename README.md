@@ -57,3 +57,30 @@ show dbs
 use admin
 show collections
 ```
+
+# Volume
+```
+docker volume ls
+```
+
+# Networking
+```
+docker network ls
+docker network inspect docker-images-gallery-app_default 
+docker network inspect docker-images-gallery-app_default | grep IPv4Address
+
+# access to the container
+docker exec -it docker-images-gallery-app-api-1 sh
+hostname
+hostname -i
+
+# install 'ping'
+apt-get update -y
+apt-get install -y iputils-ping
+
+# different ways to connect to each others internally
+ping 192.168.0.2
+ping 8.8.8.8 # for google server
+ping mongo
+ping docker-images-gallery-app-frontend-1
+```
