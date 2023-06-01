@@ -91,9 +91,9 @@ docker ps -a
 # get container name
 docker ps
 # go inside the runing container
-docker exec -it CONTAINER_NAME bash # 'i' stands for interactive and 't' stands for terminal
+docker exec -it CONTAINER_NAME sh # 'i' stands for interactive and 't' stands for terminal
 # see runing process
-ps -x
+ps
 # exit
 exit
 ```

@@ -22,3 +22,18 @@ UNSPLASH_KEY=2MJvApIkV13hfg2LmQlneILfHoJ2ttlzSdPKefGOyKM
 
 - Save modified **.env.local** file
 
+# Run both frontend and backend api using their image
+```
+docker run -p 5050:5050 -d images-gallery-api
+docker run -p 3000:3000 -d images-gallery-frontend
+
+# see runing containers
+docker ps
+
+# stop and start container
+docker stop CONTARINER_NAME
+docker start CONTARINER_NAME
+
+# logs containers
+docker logs CONTARINER_NAME
+```
