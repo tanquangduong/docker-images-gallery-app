@@ -9,6 +9,7 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
+    "python.terminal.activateEnvironment": true,
     "python.pythonPath": "api/.venv/bin/python3",
     "python.linting.pycodestyleEnabled": true,
     "python.linting.pycodestyleArgs": [
@@ -18,5 +19,6 @@
     "python.formatting.provider": "black",
     "[python]": {
         "editor.formatOnSave": true
-    }
+    },
+    "python.analysis.typeCheckingMode": "basic"
 }
