@@ -49,3 +49,11 @@ docker-compose up -d
 docker-compose down
 
 ```
+
+# Access mongo shell
+```
+docker exec -it docker-images-gallery-app-mongo-1 mongosh --username root --password very-strong-db-password
+show dbs
+use admin
+show collections
+```
