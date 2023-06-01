@@ -37,3 +37,15 @@ docker start CONTARINER_NAME
 # logs containers
 docker logs CONTARINER_NAME
 ```
+
+# Docker-compose
+```
+docker-compose up
+
+# run in backgroud
+docker-compose up -d
+
+# stop both containers simutaniously 
+docker-compose down
+
+```
